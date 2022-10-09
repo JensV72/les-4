@@ -1,0 +1,266 @@
+/* Navigatie bar ------------------------------------------------------ */
+nav {
+    display: flex;
+    border-bottom: 7px inset black;
+}
+
+
+#home {
+    display: flex;
+    flex: 1;
+    background-color: transparent;
+    border-radius: 25%;
+    width: 100%;
+    height: 100%;
+    padding: 12px
+}
+
+#portfolio {
+    display: flex;
+    flex: 1;
+    background-color: transparent;
+    border-radius: 25%;
+    width: 100%;
+    height: 100%;
+    padding: 12px
+}
+
+#contact {
+    display: flex;
+    flex: 1;
+    background-color: transparent;
+    border-radius: 25%;
+    width: 100%;
+    height: 100%;
+    padding: 12px
+}
+
+.legebalk {
+    flex: 30;
+    width: 100%;
+    height: 100%;
+}
+
+#foto {
+    display: flex;
+    flex: 1;
+    background-color: transparent;
+    border-radius: 25%;
+    width: 100%;
+    height: 100%;
+    padding: 12px
+}
+
+div#foto a img {
+    scale: 170%;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+div#home a img {
+    scale: 100%;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+div#contact a img {
+    scale: 100%;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+div#portfolio a img {
+    scale: 100%;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+#foto:hover {
+    background-color: #FF7B44;
+}
+
+
+#home:hover {
+    background-color: #FF7B44;
+}
+
+#portfolio:hover {
+    background-color: #FF7B44;
+}
+
+#contact:hover {
+    background-color: #FF7B44;
+}
+
+/* einde nav----------------------------------------------------------------------- */
+@media (max-width:450px) {
+    nav {
+        flex-direction: column;
+    }
+
+    #foto {
+        width: 10%;
+        height: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #home {
+        width: 10%;
+        height: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #portfolio {
+        width: 10%;
+        height: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact {
+        width: 10%;
+        height: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flip-box-back {
+        width: 40vw;
+        margin-left: -10vw;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FF4950;
+    color: lightpink;
+    font-family: "verdana";
+}
+
+
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    background-color: #FF7B44;
+    padding: 50px;
+    width: 35vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-top: 7px solid #FD9B00;
+    border-bottom: 7px solid #FD9B00;
+    box-shadow: #F2FF62 20px 20px;
+    border-radius: 20px;
+}
+
+h2 {
+    background-color: #F2FF62;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 90px;
+    width: 35vw;
+    border-top: 7px solid #FD9B00;
+    border-bottom: 7px solid #FD9B00;
+    box-shadow: #FF7B44 20px 20px;
+    border-radius: 20px;
+}
+
+/* Flip-box --------------------------------- */
+.flip-box {
+    background-color: transparent;
+    width: 325px;
+    height: 300px;
+    margin-top: 10vh;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    background-color: transparent;
+    color: lightpink;
+}
+
+.flip-box-back {
+    background-color: transparent;
+    color: lightpink;
+    transform: rotateY(180deg);
+}
+
+/* Flip-box --------------------------------- */
+
+#cv {
+    font-size: 2.4vw;
+    font-weight: bold;
+    background-color: #F2FF62;
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+    width: 20vw;
+    margin-left: 40vw;
+    border-top: 7px solid #FD9B00;
+    border-bottom: 7px solid #FD9B00;
+    box-shadow: #FF7B44 20px 20px;
+    border-radius: 20px;
+}
+
+a {
+    color: lightpink;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: #FD9B00;
+    padding: 10px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 100vw;
+    text-align: center;
+    font-size: 1vw;
+}

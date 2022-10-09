@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn portfolio contacten</title>
+    <link rel="stylesheet" href="./css/contacten.css">
+</head>
+
+<body>
+    <nav>
+        <div id="foto">
+            <a target="_blank"
+                href="https://www.hogeschoolrotterdam.nl/opleidingen/bachelor/creative-media-and-game-technologies/voltijd/">
+                <img alt="image of my newest shoes" src="./img/hogeschool-rotterdam-logo-png-transparent.png" />
+            </a>
+        </div>
+        <div class="legebalk"></div>
+
+        <div id="home">
+            <a href="index.html">
+                <img alt="image of home button" src="./img/home button.png" /></a>
+        </div>
+
+        <div id="portfolio">
+            <a href="portfolio.html">
+                <img alt="image of portfolio" src="./img/portfolio.png" /></a>
+        </div>
+
+        <div id="contact">
+            <a href="contact.html">
+                <img alt="image of contact" src="./img/contacten.png" /></a>
+        </div>
+    </nav>
+
+    <section id="socials">
+        <div>
+            <a target="_blank"
+                href="https://www.instagram.com/jens.verhoeff/?hl=nl">
+                <img src="./img/instagram logo.png"></a>
+        </div>
+        <div>
+            <a href="mailto:jens.verhoeff@gmail.com">
+                <img src="./img/email logo.png">
+                </a>
+            </div>
+
+        <div class="telefoon" onclick="myFunction()">
+            <img src="./img/telefoonlogo.png">
+            <div class="popuptext" id="myPopup">+31630882981</div>
+        </div>
+        <script>
+            function myFunction() {
+              let popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+            </script>
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
